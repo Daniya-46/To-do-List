@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,90 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url('../src/assets/todoBg.jpeg');
+  background-size:cover ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+  margin: 20px auto;
+  color: rgb(34, 37, 35);
+  min-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navbar h1 {
+  margin: 10px 0;
+  font-family: 'Permanent Marker';
+}
+
+.todo-list {
+  margin: 20px;
+}
+
+.todo-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.todo-list li {
+  background: #508e74;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.todo-list li:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.todo-list .title {
+  font-weight: bold;
+  color: #ddfaef;
+  font-size: 1.2em;
+  font-family: 'Permanent Marker';
+}
+
+.empty {
+  margin: 20px;
+  text-align: center;
+  font-family: 'Permanent Marker';
+}
+
+form {
+  padding: 20px;
+}
+
+input[type= text] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #1f3c36;
+  color: #fff;
+  border: 0;
+}
+
+input[type=submit] {
+  margin: 10px auto;
+  background: #337155;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  display: block;
 }
